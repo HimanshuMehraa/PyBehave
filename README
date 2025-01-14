@@ -1,0 +1,8 @@
+behave feature\reset.feature
+
+behave feature\reset.feature --tags=~smoke      // EXCEPT SMOKE OTHER tests
+behave feature\reset.feature --tags=smoke       //SMOKE
+behave feature\reset.feature --tags=smoke,egression  //SMOKE AND REGRESSION
+
+
+allure behave for REPORTS
