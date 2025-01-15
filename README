@@ -6,3 +6,6 @@ behave feature\reset.feature --tags=smoke,egression  //SMOKE AND REGRESSION
 
 
 allure behave for REPORTS
+
+behave -f allure_behave.formatter:AllureFormatter -o %allure_result_folder% ./features
+$ allure serve %allure_result_folder%
